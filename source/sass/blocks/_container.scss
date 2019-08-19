@@ -1,9 +1,10 @@
 .container {
-  padding: 0 50px;
+  padding: 0 30px;
   margin: 0 auto;
 
   @include breakpoint-up($breakpoint-tablet) {
     max-width: $breakpoint-tablet;
+    padding: 0 50px;
   }
 
   @include breakpoint-up($breakpoint-desktop) {
