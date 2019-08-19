@@ -3,3 +3,35 @@
   margin: 0;
   list-style-type: none;
 }
+
+@mixin sitenav-link {
+  position: relative;
+  display: block;
+  padding: 27px 50px 27px 77px;
+  border-top: 1px solid #ececec;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $black-text-color;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin breakpoint-up($viewport-size) {
+  @media (min-width: $viewport-size) {
+    @content;
+  }
+}
+
+@mixin breakpoint-only($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}

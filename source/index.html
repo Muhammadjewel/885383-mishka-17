@@ -8,24 +8,38 @@
   </head>
   <body>
 
-    <nav class="sitenav">
-      <a class="logo">
-        <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип Mishka">
-      </a>
-      <button class="sitenav__toggler">Кнопка для открытия/закрытия меню</button>
-      <ul class="main-nav">
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
-      </ul>
-      <ul>
-        <li class="user-actions__item"><a class="user-actions__link" href="search.html">Поиск по сайту</a></li>
-        <li class="user-actions__item"><a class="user-actions__link" href="cart.html">Корзина: пока пуста</a></li>
-      </ul>
-      <ul class="secondary-nav">
-        <li class="secondary-nav__item"><a class="secondary-nav__link" href="new-products.html">Новые поступления</a></li>
-        <li class="secondary-nav__item"><a class="secondary-nav__link" href="sale.html">Распродажа</a></li>
-      </ul>
-      <p class="sitenav__delivery-text">Бесплатная доставка по России</p>
+    <nav class="sitenav sitenav--open">
+      <div class="container sitenav__container">
+        <div class="logo">
+          <a class="logo__link">
+            <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип Mishka">
+          </a>
+        </div>
+        <button class="sitenav__toggler">Кнопка для открытия/закрытия меню</button>
+        <ul class="main-nav">
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="user-actions">
+          <li class="user-actions__item">
+            <a class="user-actions__link user-actions__link--search" href="search.html">
+              <img class="user-actions__icon" src="https://placehold.it/18x18" alt="Rasm">
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="user-actions__item">
+            <a class="user-actions__link user-actions__link--cart" href="cart.html">
+              <img class="user-actions__icon user-actions__icon--cart" src="https://placehold.it/18x18" alt="Rasm">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+        <ul class="secondary-nav">
+          <li class="secondary-nav__item"><a class="secondary-nav__link" href="new-products.html">Новые поступления</a></li>
+          <li class="secondary-nav__item"><a class="secondary-nav__link" href="sale.html">Распродажа</a></li>
+        </ul>
+        <p class="sitenav__delivery-text">Бесплатная доставка по России</p>
+      </div>
     </nav>
 
   </body>
