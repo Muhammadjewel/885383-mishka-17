@@ -1,0 +1,116 @@
+.hero {
+  padding-top: 75px;
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 128px;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: $lead-text-color;
+}
+
+.hero__link {
+  position: relative;
+  display: block;
+  padding: 28px 30px;
+  margin: 0 -30px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--interior {
+    background-color: $seafoam-blue;
+
+    &:hover {
+      background-color: $seafoam-blue-2;
+    }
+  }
+
+  &--toys {
+    background-color: $aqua-marine;
+
+    &:hover {
+      background-color: $aqua-marine-2;
+    }
+  }
+}
+
+.hero__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+
+  &--interior {
+    right: 37px;
+  }
+
+  &--toys {
+    right: 27px;
+  }
+}
+
+.hero__link:hover .hero__icon {
+  opacity: 0.7;
+}
+
+.hero__link:active .hero__icon {
+  opacity: 0.3;
+}
+
+@include breakpoint-up($breakpoint-tablet) {
+  .hero {
+    padding-top: 157px;
+    padding-bottom: 12px;
+  }
+
+  .hero__text {
+    margin-bottom: 368px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .hero__links-wrapper {
+    position: relative;
+    display: flex;
+
+    &::after {
+      position: absolute;
+      left: -50px;
+      right: -50px;
+      bottom: -12px;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      content: "";
+    }
+  }
+
+  .hero__link {
+    flex-grow: 1;
+    padding: 30px 36px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .hero {
+    padding-bottom: 17px;
+  }
+
+  .hero__links-wrapper::after {
+    height: 34px;
+    bottom: -17px;
+  }
+}
