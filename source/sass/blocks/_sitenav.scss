@@ -44,7 +44,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 50px;
   }
 
   .sitenav__toggler {
@@ -64,6 +63,16 @@
     display: block;
     position: absolute;
     top: calc(100% + 20px);
+    right: 0;
+  }
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .sitenav__container {
+    padding: 0 50px;
+  }
+
+  .sitenav__delivery-text {
     right: 50px;
   }
 }

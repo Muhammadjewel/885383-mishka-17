@@ -3,11 +3,12 @@
   margin: 0 auto;
 
   @include breakpoint-up($breakpoint-tablet) {
-    max-width: $breakpoint-tablet;
-    padding: 0 50px;
+    max-width: 662px;
+    padding: 0;
   }
 
   @include breakpoint-up($breakpoint-desktop) {
     max-width: $breakpoint-desktop;
+    padding: 0 50px;
   }
 }
