@@ -20,7 +20,7 @@
 }
 
 .logo__img {
-  vertical-align: middle;
+  display: block;
 }
 
 @include breakpoint-up($breakpoint-desktop) {
