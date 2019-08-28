@@ -1,0 +1,104 @@
+.about {
+  padding-top: 32px;
+  color: $black-text-color;
+}
+
+.about__heading {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.about__list {
+  @include reset-list;
+}
+
+.about__item {
+  padding-top: 55px;
+  margin-bottom: 28px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+
+  &--eco {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--price {
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--likes {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--handmade {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--support {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--packaging {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}
+
+@include breakpoint-up($breakpoint-tablet) {
+  .about__heading {
+    margin-bottom: 44px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 50%;
+    margin-bottom: 56px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--eco {
+      order: -2;
+    }
+
+    &--handmade {
+      order: -1;
+    }
+
+    &--likes {
+      order: 1;
+    }
+
+    &--packaging {
+      order: 2;
+    }
+  }
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .about {
+    padding-bottom: 46px;
+  }
+
+  .about__container {
+    padding-left: 220px;
+  }
+
+  .about__heading {
+    margin-bottom: 42px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__item {
+    width: 350px;
+  }
+}
