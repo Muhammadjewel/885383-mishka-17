@@ -12,7 +12,11 @@
       <div class="container sitenav__container">
         <div class="logo">
           <a class="logo__link">
-            <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип Mishka">
+            <picture>
+              <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width:772px)" srcset="img/logo-tablet.svg">
+              <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип Mishka">
+            </picture>
           </a>
         </div>
         <button class="sitenav__toggler">Кнопка для открытия/закрытия меню</button>
