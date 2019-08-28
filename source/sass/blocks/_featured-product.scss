@@ -1,7 +1,7 @@
 .featured-product {
   position: relative;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 36px;
 }
 
 .featured-product__container {
@@ -78,6 +78,7 @@
 @include breakpoint-up($breakpoint-tablet) {
   .featured-product {
     padding-top: 40px;
+    padding-bottom: 53px;
   }
 
   .featured-product__heading {
@@ -130,6 +131,10 @@
 }
 
 @include breakpoint-up($breakpoint-desktop) {
+  .featured-product {
+    padding-bottom: 73px;
+  }
+
   .featured-product__container {
     padding-left: 225px;
   }
