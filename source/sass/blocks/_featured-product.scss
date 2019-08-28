@@ -52,11 +52,19 @@
   text-align: left;
 }
 
-.featured-product__img {
+.featured-product__picture {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 26px;
+}
+
+.featured-product__img {
+  display: block;
+  width: 260px;
+  height: 315px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .featured-product__price {
@@ -105,10 +113,13 @@
     margin-bottom: 55px;
   }
 
-  .featured-product__img {
+  .featured-product__picture {
     position: absolute;
     top: 100px;
     right: 0;
+  }
+
+  .featured-product__img {
     width: 333px;
     height: 404px;
   }
@@ -144,10 +155,13 @@
     margin-bottom: 110px;
   }
 
-  .featured-product__img {
+  .featured-product__picture {
     z-index: -1;
     top: 0;
     right: 50px;
+  }
+
+  .featured-product__img {
     width: 525px;
     height: 636px;
   }
