@@ -48,6 +48,10 @@
 }
 
 @include breakpoint-up($breakpoint-tablet) {
+  .about {
+    padding-bottom: 25px;
+  }
+
   .about__heading {
     margin-bottom: 44px;
     font-size: 43px;
