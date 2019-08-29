@@ -1,4 +1,4 @@
-.reviews {
+.reviews__container {
   padding-top: 30px;
   padding-bottom: 45px;
 }
@@ -47,10 +47,11 @@
 }
 
 @include breakpoint-up($breakpoint-tablet) {
-  .reviews {
+  .reviews__container {
     position: relative;
-    background: url("../img/review@1x.jpg") no-repeat top left / 350px;
     padding-top: 80px;
+    padding-bottom: 70px;
+    background: url("../img/review@1x.jpg") no-repeat left top / 350px;
   }
 
   .reviews__heading {
