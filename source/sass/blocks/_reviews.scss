@@ -1,0 +1,16 @@
+.reviews {
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+
+.reviews__heading {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black-text-color;
+}
+
+.reviews__list {
+  @include reset-list;
+}
