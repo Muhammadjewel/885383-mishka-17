@@ -13,33 +13,13 @@
   font-size: 17px;
 }
 
-.reviews-controls {
-  display: flex;
-  margin-bottom: 38px;
-}
-
-.reviews-controls__item {
-  width: 50%;
-  padding: 13px;
-  border: 1px solid #ececec;
-  margin-right: -1px;
-  background: none;
-  text-align: center;
-
-  &:last-child {
-    margin-right: 0;
+@include breakpoint-up($breakpoint-tablet) {
+  .review__text {
+    margin-bottom: 54px;
+    font-size: 17px;
   }
-}
 
-.reviews-controls__icon {
-  width: 50px;
-  height: 26px;
-}
-
-.reviews-controls__item:hover .reviews-controls__icon {
-  opacity: 0.6;
-}
-
-.reviews-controls__item:active .reviews-controls__icon {
-  opacity: 0.3;
+  .review__author {
+    font-size: 18px;
+  }
 }

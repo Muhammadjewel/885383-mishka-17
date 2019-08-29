@@ -14,3 +14,65 @@
 .reviews__list {
   @include reset-list;
 }
+
+.reviews-controls {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.reviews-controls__item {
+  width: 50%;
+  padding: 13px;
+  border: 1px solid #ececec;
+  margin-right: -1px;
+  background: none;
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.reviews-controls__icon {
+  width: 50px;
+  height: 26px;
+}
+
+.reviews-controls__item:hover .reviews-controls__icon {
+  opacity: 0.6;
+}
+
+.reviews-controls__item:active .reviews-controls__icon {
+  opacity: 0.3;
+}
+
+@include breakpoint-up($breakpoint-tablet) {
+  .reviews {
+    position: relative;
+    background: url("../img/review@1x.jpg") no-repeat top left / 350px;
+    padding-top: 80px;
+  }
+
+  .reviews__heading {
+    margin-bottom: 54px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews-controls {
+    position: absolute;
+    right: 50px;
+    bottom: 42px;
+  }
+
+  .reviews-controls__item {
+    border: none;
+  }
+
+  .reviews__add-button {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 175px;
+  }
+}
