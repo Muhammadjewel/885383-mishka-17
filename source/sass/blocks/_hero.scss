@@ -112,6 +112,7 @@
   }
 
   .hero__link {
+    flex-basis: 334px;
     flex-grow: 1;
     padding: 30px 36px;
     margin: 0;
@@ -133,5 +134,9 @@
   .hero__links-wrapper::after {
     height: 34px;
     bottom: -18px;
+  }
+
+  .hero__link {
+    flex-basis: 525px;
   }
 }
