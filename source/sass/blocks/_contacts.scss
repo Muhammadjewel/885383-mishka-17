@@ -1,0 +1,39 @@
+.contacts {
+  padding-top: 38px;
+}
+
+.contacts__heading {
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-size: 18px;
+  color: $black-text-color;
+}
+
+.contacts__group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.contacts__label {
+  width: 50px;
+}
+
+.contacts__email {
+  border-bottom: 1px solid $aqua-marine-2;
+  color: #444444;
+  text-decoration: none;
+
+  &:hover {
+    color: $aqua-marine-2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__address {
+  width: 180px;
+  font-style: normal;
+}
