@@ -14,3 +14,8 @@ body {
   line-height: 30px;
   color: $default-text-color;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
