@@ -67,6 +67,7 @@
   }
 
   .reviews-controls__item {
+    padding: 13px 18px;
     border: none;
   }
 
@@ -75,5 +76,17 @@
     top: 80px;
     right: 50px;
     width: 175px;
+  }
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .reviews__container {
+    padding-left: 225px;
+    padding-bottom: 163px;
+    background-position: 50px top;
+  }
+
+  .reviews-controls {
+    bottom: 120px;
   }
 }

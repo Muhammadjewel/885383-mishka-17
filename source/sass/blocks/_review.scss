@@ -1,8 +1,10 @@
 .review__text {
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
 .review__author {
+  display: block;
   font-size: 17px;
   line-height: 24px;
   color: $black-text-color;
@@ -21,5 +23,16 @@
 
   .review__author {
     font-size: 18px;
+  }
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .review__text {
+    padding-right: 105px;
+    margin-bottom: 40px;
+  }
+
+  .review__author-handle {
+    margin-bottom: 0;
   }
 }
