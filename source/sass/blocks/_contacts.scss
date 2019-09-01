@@ -3,6 +3,7 @@
 }
 
 .contacts__heading {
+  position: relative;
   margin-top: 0;
   margin-bottom: 29px;
   font-size: 18px;
@@ -39,6 +40,15 @@
   font-style: normal;
 }
 
+.contacts__map-picture {
+  display: block;
+}
+
+.contacts__map-picture img {
+  display: block;
+  width: 100%;
+}
+
 @include breakpoint-up($breakpoint-tablet) {
   .contacts {
     padding-top: 69px;
@@ -48,11 +58,23 @@
     margin-bottom: 56px;
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 47px;
+      height: 81px;
+      background: url("../img/icon-flag.svg") no-repeat top left / contain;
+      content: "";
+    }
   }
 
   .contacts__info-group {
-    width: 50%;
     justify-content: flex-start;
+    width: 50%;
+    margin-bottom: 55px;
   }
 
   .contacts__info {
@@ -68,5 +90,15 @@
 
   .contacts__address {
     flex-grow: 1;
+  }
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .contacts__container {
+    padding-left: 225px;
+  }
+
+  .contacts__heading::after {
+    left: -111px;
   }
 }
