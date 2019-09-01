@@ -49,6 +49,7 @@
 
 @include breakpoint-up($breakpoint-tablet) {
   .about {
+    padding-top: 55px;
     padding-bottom: 25px;
   }
 
@@ -89,7 +90,8 @@
 
 @include breakpoint-up($breakpoint-desktop) {
   .about {
-    padding-bottom: 46px;
+    padding-top: 68px;
+    padding-bottom: 44px;
   }
 
   .about__container {
