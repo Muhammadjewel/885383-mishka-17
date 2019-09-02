@@ -40,6 +40,21 @@
   font-style: normal;
 }
 
+.contacts__map-link {
+  position: relative;
+  display: block;
+}
+
+.contacts__map-pin {
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  z-index: 1;
+  width: 67px;
+  height: 100px;
+  background: url("../img/icon-map-pin.svg");
+}
+
 .contacts__map-picture {
   display: block;
   margin-left: -30px;
