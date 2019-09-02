@@ -42,6 +42,8 @@
 
 .contacts__map-picture {
   display: block;
+  margin-left: -30px;
+  margin-right: -30px;
 }
 
 .contacts__map-picture img {
@@ -93,12 +95,47 @@
   }
 }
 
+@include breakpoint-only($breakpoint-tablet, $breakpoint-desktop - 1) {
+  .contacts__map-picture {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+}
+
 @include breakpoint-up($breakpoint-desktop) {
   .contacts__container {
+    position: relative;
+    padding-top: 80px;
     padding-left: 225px;
+  }
+
+  .contacts__heading {
+    width: 350px;
+  }
+
+  .contacts__info {
+    flex-direction: column;
+    width: 350px;
+  }
+
+  .contacts__info-group {
+    width: 100%;
   }
 
   .contacts__heading::after {
     left: -111px;
+  }
+
+  .contacts__map-link {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__map-picture {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
