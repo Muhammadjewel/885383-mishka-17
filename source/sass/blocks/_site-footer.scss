@@ -3,6 +3,10 @@
   background-color: $very-light-pink;
 }
 
+.site-footer__logo-link {
+  display: none;
+}
+
 .site-footer__divider {
   height: 1px;
   border: none;
@@ -27,4 +31,30 @@
 
 .site-footer__academy-logo {
   display: block;
+}
+
+@include breakpoint-up($breakpoint-tablet) {
+  .site-footer {
+    padding-top: 58px;
+    padding-bottom: 50px;
+  }
+
+  .site-footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-footer__logo-link {
+    display: block;
+    flex-grow: 1;
+  }
+
+  .site-footer__socials {
+    flex-grow: 2;
+  }
+
+  .site-footer__divider {
+    display: none;
+  }
 }
