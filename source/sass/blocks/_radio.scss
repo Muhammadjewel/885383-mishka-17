@@ -32,3 +32,9 @@
 .radio__input:checked ~ .radio__control {
   border-color: $seafoam-blue-3;
 }
+
+@include breakpoint-up($breakpoint-tablet) {
+  .radio__control {
+    width: 112px;
+  }
+}
