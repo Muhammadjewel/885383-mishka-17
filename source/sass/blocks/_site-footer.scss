@@ -1,0 +1,30 @@
+.site-footer {
+  padding: 25px 0;
+  background-color: $very-light-pink;
+}
+
+.site-footer__divider {
+  height: 1px;
+  border: none;
+  margin-top: 27px;
+  margin-bottom: 22px;
+  background-color: #e8e8e8;
+}
+
+.site-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-footer__copy-text {
+  margin-right: 30px;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $black-text-color;
+}
+
+.site-footer__academy-logo {
+  display: block;
+}
