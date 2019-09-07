@@ -43,3 +43,10 @@
     }
   }
 }
+
+@include breakpoint-up($breakpoint-desktop) {
+  .user-actions {
+    justify-content: flex-end;
+    width: 410px;
+  }
+}
