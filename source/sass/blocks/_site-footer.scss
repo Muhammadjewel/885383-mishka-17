@@ -3,7 +3,7 @@
   background-color: $very-light-pink;
 }
 
-.site-footer__logo-link {
+.site-footer__logo-wrapper {
   display: none;
 }
 
@@ -50,11 +50,8 @@
   }
 
   .site-footer__logo-wrapper {
+    display: flex;
     width: 200px;
-  }
-
-  .site-footer__logo-link {
-    display: block;
   }
 
   .site-footer__divider {
