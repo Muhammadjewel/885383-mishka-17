@@ -59,20 +59,27 @@
     <section class="products">
       <div class="container">
         <h2 class="products__heading">Список продуктов</h2>
-        <div class="products__list">
-          <a class="products__item product" href="product.html">
-            <picture class="product__picture">
-              <source
-                media="(min-width:768px)"
-                srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-              <img
-                class="product__img"
-                src="img/photo-hare-mobile@1x.jpg"
-                srcset="img/photo-hare-mobile@1x.jpg 1x, img/photo-hare-mobile@2x.jpg 2x"
-                alt="Зайчик-попрыгайчик">
-            </picture>
+        <ul class="products__list">
+          <li class="products__item product">
+            <a class="product__link product__link--block" href="product.html">
+              <picture class="product__picture">
+                <source
+                  media="(min-width:1150px)"
+                  srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width:768px)"
+                  srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img
+                  class="product__img"
+                  src="img/photo-hare-mobile@1x.jpg"
+                  srcset="img/photo-hare-mobile@1x.jpg 1x, img/photo-hare-mobile@2x.jpg 2x"
+                  alt="Зайчик-попрыгайчик">
+              </picture>
+            </a>
             <div class="product__info">
-              <h3 class="product__name">Зайчик-попрыгайчик</h3>
+              <h3 class="product__name">
+                <a class="product__link" href="product.html">Зайчик-попрыгайчик</a>
+              </h3>
               <p class="product__details">Рост 30 см, вес 200 г</p>
               <div class="product__actions">
                 <div class="product__price">1 200 руб.</div>
@@ -81,18 +88,25 @@
                 </button>
               </div>
             </div>
-          </a>
+          </li>
 
-          <a class="products__item product" href="product.html">
-            <picture class="product__picture">
-              <source
-                media="(min-width:768px)"
-                srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-              <img class="product__img" src="img/photo-bowl-mobile@1x.jpg"
-                srcset="img/photo-bowl-mobile@1x.jpg 1x, img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
-            </picture>
+          <li class="products__item product">
+            <a class="product__link product__link--block" href="product.html">
+              <picture class="product__picture">
+                <source
+                  media="(min-width:1150px)"
+                  srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width:768px)"
+                  srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="product__img" src="img/photo-bowl-mobile@1x.jpg"
+                  srcset="img/photo-bowl-mobile@1x.jpg 1x, img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
+              </picture>
+            </a>
             <div class="product__info">
-              <h3 class="product__name">Корзинка для белья</h3>
+              <h3 class="product__name">
+                <a class="product__link" href="product.html">Корзинка для белья</a>
+              </h3>
               <p class="product__details">Диаметр 15 см, высота 10 см</p>
               <div class="product__actions">
                 <div class="product__price">690 руб.</div>
@@ -101,18 +115,25 @@
                 </button>
               </div>
             </div>
-          </a>
+          </li>
 
-          <a class="products__item product" href="product.html">
-            <picture class="product__picture">
-              <source
-                media="(min-width:768px)"
-                srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-              <img class="product__img" src="img/photo-toys-mobile@1x.jpg"
-                srcset="img/photo-toys-mobile@1x.jpg 1x, img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
-            </picture>
+          <li class="products__item product">
+            <a class="product__link product__link--block" href="product.html">
+              <picture class="product__picture">
+                <source
+                  media="(min-width:1150px)"
+                  srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width:768px)"
+                  srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="product__img" src="img/photo-toys-mobile@1x.jpg"
+                  srcset="img/photo-toys-mobile@1x.jpg 1x, img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
+              </picture>
+            </a>
             <div class="product__info">
-              <h3 class="product__name">Большая корзинка для игрушек</h3>
+              <h3 class="product__name">
+                <a class="product__link" href="product.html">Большая корзинка для игрушек</a>
+              </h3>
               <p class="product__details">Диаметр 30 см, высота 30 см</p>
               <div class="product__actions">
                 <div class="product__price">1 500 руб.</div>
@@ -121,8 +142,8 @@
                 </button>
               </div>
             </div>
-          </a>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 

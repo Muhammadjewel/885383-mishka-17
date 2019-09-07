@@ -1,8 +1,16 @@
 .product {
   display: flex;
   flex-direction: column;
-  text-decoration: none;
   color: $default-text-color;
+}
+
+.product__link {
+  text-decoration: none;
+  color: $black-text-color;
+
+  &--block {
+    display: block;
+  }
 }
 
 .product__picture {
@@ -84,5 +92,15 @@
 
   .product__price {
     font-size: 17px;
+  }
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .product {
+    flex-direction: column;
+  }
+
+  .product__info {
+    flex-grow: 1;
   }
 }
