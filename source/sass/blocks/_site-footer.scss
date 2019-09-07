@@ -7,6 +7,10 @@
   display: none;
 }
 
+.site-footer__logo {
+  display: block;
+}
+
 .site-footer__divider {
   height: 1px;
   border: none;
@@ -45,16 +49,19 @@
     align-items: center;
   }
 
-  .site-footer__logo-link {
-    display: block;
-    flex-grow: 1;
+  .site-footer__logo-wrapper {
+    width: 200px;
   }
 
-  .site-footer__socials {
-    flex-grow: 2;
+  .site-footer__logo-link {
+    display: block;
   }
 
   .site-footer__divider {
     display: none;
+  }
+
+  .site-footer__copyright {
+    width: 200px;
   }
 }
