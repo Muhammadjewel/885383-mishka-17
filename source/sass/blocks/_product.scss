@@ -15,6 +15,7 @@
 
 .product__picture {
   display: block;
+  max-width: 100%;
 }
 
 .product__img {
@@ -101,6 +102,7 @@
   }
 
   .product__info {
+    width: 100%;
     flex-grow: 1;
   }
 }
