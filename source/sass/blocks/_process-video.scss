@@ -40,6 +40,7 @@
 .process-video__picture,
 .process-video__img {
   display: block;
+  width: 100%;
 }
 
 .process-video__play-button {
@@ -110,5 +111,40 @@
     margin-bottom: 33px;
     font-size: 15px;
     line-height: 30px;
+  }
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .process-video__container {
+    position: relative;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .process-video__heading {
+    position: absolute;
+    top: 98px;
+    right: 60px;
+    width: 230px;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .process-video__heading-icon {
+    top: -50px;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .process-video__player {
+    width: 680px;
+  }
+
+  .process-video__info {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    padding: 60px;
+    padding-left: 80px;
   }
 }
