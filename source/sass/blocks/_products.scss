@@ -56,14 +56,16 @@
 
   .products__list {
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: stretch;
+    margin-left: -50px;
     margin-bottom: 0;
   }
 
   .products__item,
   .products__item:last-child {
-    width: 316px;
+    width: 316.6666px;
+    margin-left: 50px;
     margin-bottom: 57px;
   }
 }
