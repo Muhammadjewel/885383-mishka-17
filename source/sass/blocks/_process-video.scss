@@ -115,6 +115,10 @@
 }
 
 @include breakpoint-up($breakpoint-desktop) {
+  .process-video {
+    padding-bottom: 105px;
+  }
+
   .process-video__container {
     position: relative;
     flex-direction: row;
