@@ -11,3 +11,19 @@
   font-size: 27px;
   line-height: 30px;
 }
+
+@include breakpoint-up($breakpoint-tablet) {
+  .page-title {
+    padding-top: 102px;
+    padding-bottom: 87px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: auto 24px;
+  }
+
+  .page-title__heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
