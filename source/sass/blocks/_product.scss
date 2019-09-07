@@ -1,5 +1,6 @@
 .product {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: $default-text-color;
 }
@@ -10,9 +11,12 @@
 
 .product__img {
   display: block;
+  width: 100%;
 }
 
 .product__info {
+  display: flex;
+  flex-direction: column;
   padding: 28px;
   border: 1px solid #ececec;
 }
@@ -37,6 +41,7 @@
   align-items: center;
   padding-top: 23px;
   border-top: 1px solid #ececec;
+  margin-top: auto;
 }
 
 .product__price {
@@ -53,4 +58,31 @@
 
 .product__add-to-cart img {
   display: block;
+}
+
+@include breakpoint-up($breakpoint-tablet) {
+  .product {
+    flex-direction: row;
+  }
+
+  .product__picture {
+    width: 335px;
+  }
+
+  .product__info {
+    width: 335px;
+  }
+
+  .product__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .product__details {
+    font-size: 15px;
+  }
+
+  .product__price {
+    font-size: 17px;
+  }
 }
