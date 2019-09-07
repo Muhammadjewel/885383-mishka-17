@@ -49,8 +49,9 @@
 
 .contacts__map-pin {
   position: absolute;
-  top: 30%;
-  left: 43%;
+  top: calc(50% - 40px);
+  left: calc(50% + 10px);
+  transform: translate(-50%, -50%);
   z-index: 1;
   width: 67px;
   height: 100px;
