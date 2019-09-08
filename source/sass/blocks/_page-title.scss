@@ -40,8 +40,8 @@
   }
 }
 
-@include breakpoint-up($breakpoint-tablet) {
-  .page-title__heading  {
+@include breakpoint-up($breakpoint-desktop) {
+  .page-title__heading {
     font-size: 53px;
   }
 }

@@ -39,7 +39,7 @@
 }
 
 .order-radio:active .order-radio__control {
-    border-color: rgba(68, 68, 68, 0.3);
+  border-color: rgba(68, 68, 68, 0.3);
 }
 
 .order-radio__input:checked ~ .order-radio__control::after {
