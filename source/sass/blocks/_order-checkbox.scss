@@ -31,14 +31,14 @@
     background: no-repeat center center / contain;
     content: "";
   }
+}
 
-  &:hover {
-    border-color: $seafoam-blue-3;
-  }
+.order-checkbox:hover .order-checkbox__control {
+  border-color: $seafoam-blue-3;
+}
 
-  &:active {
-    border-color: rgba(68, 68, 68, 0.3);
-  }
+.order-checkbox:active .order-checkbox__control {
+  border-color: rgba(68, 68, 68, 0.3);
 }
 
 .order-checkbox__input:checked ~ .order-checkbox__control::after {
