@@ -1,11 +1,11 @@
-.order-form__fieldset {
+.order-form__section {
   padding: 0;
   border: none;
   margin: 0;
   margin-bottom: 30px;
 }
 
-.order-form__legend {
+.order-form__heading {
   display: flex;
   width: 100%;
   align-items: center;
@@ -25,12 +25,12 @@
   }
 }
 
-.order-form__legend-text {
+.order-form__heading-text {
   width: 64px;
 }
 
 @include breakpoint-up($breakpoint-tablet) {
-  .order-form__fieldset {
+  .order-form__section {
     padding-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 0;
@@ -40,7 +40,7 @@
     }
   }
 
-  .order-form__legend::after {
+  .order-form__heading::after {
     display: none;
   }
 
@@ -49,7 +49,7 @@
     align-items: flex-start;
   }
 
-  .order-form__legend {
+  .order-form__heading {
     flex-shrink: 0;
     width: 165px;
     margin-top: 19px;
@@ -62,7 +62,7 @@
 }
 
 @include breakpoint-up($breakpoint-desktop) {
-  .order-form__legend {
+  .order-form__heading {
     position: absolute;
     width: 115px;
     transform: translateX(-100%);

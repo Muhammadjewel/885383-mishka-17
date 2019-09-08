@@ -65,64 +65,88 @@
       <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     </div>
     <form class="order-form" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="order-form__fieldset">
+      <section class="order-form__section">
         <div class="container order-form__fields-wrapper">
-          <legend class="order-form__legend">
-            <span class="order-form__legend-text">Тип</span>
-          </legend>
+          <h3 class="order-form__heading">
+            <span class="order-form__heading-text">Тип</span>
+          </h3>
           <div class="order-form__controls">
             <label class="order-radio">
               <input class="order-radio__input" type="radio" name="type" value="accessory" checked>
               <span class="order-radio__control"></span>
-              <div class="order-radio__text">Аксессуар для интерьера</div>
+              <span class="order-radio__text">Аксессуар для интерьера</span>
             </label>
             <label class="order-radio">
               <input class="order-radio__input" type="radio" name="type" value="toy">
               <span class="order-radio__control"></span>
-              <div class="order-radio__text">Детская игрушка</div>
+              <span class="order-radio__text">Детская игрушка</span>
             </label>
           </div>
         </div>
-      </fieldset>
-      <fieldset class="order-form__fieldset">
+      </section>
+      <section class="order-form__section">
         <div class="container order-form__fields-wrapper">
-          <legend class="order-form__legend">
-            <span class="order-form__legend-text">Цвет</span>
-          </legend>
+          <h3 class="order-form__heading">
+            <span class="order-form__heading-text">Цвет</span>
+          </h3>
           <div class="order-form__controls">
             <label class="order-checkbox">
               <input class="order-checkbox__input" type="checkbox" name="white" checked>
               <span class="order-checkbox__control"></span>
-              <div class="order-checkbox__text">Белый</div>
+              <span class="order-checkbox__text">Белый</span>
             </label>
             <label class="order-checkbox">
               <input class="order-checkbox__input" type="checkbox" name="grey" checked>
               <span class="order-checkbox__control"></span>
-              <div class="order-checkbox__text">Серый</div>
+              <span class="order-checkbox__text">Серый</span>
             </label>
             <label class="order-checkbox">
               <input class="order-checkbox__input" type="checkbox" name="tiffany">
               <span class="order-checkbox__control"></span>
-              <div class="order-checkbox__text">«Тиффани»</div>
+              <span class="order-checkbox__text">«Тиффани»</span>
             </label>
             <label class="order-checkbox">
               <input class="order-checkbox__input" type="checkbox" name="black">
               <span class="order-checkbox__control"></span>
-              <div class="order-checkbox__text">Черный</div>
+              <span class="order-checkbox__text">Черный</span>
             </label>
             <label class="order-checkbox">
               <input class="order-checkbox__input" type="checkbox" name="pink">
               <span class="order-checkbox__control"></span>
-              <div class="order-checkbox__text">Розовый</div>
+              <span class="order-checkbox__text">Розовый</span>
             </label>
             <label class="order-checkbox">
               <input class="order-checkbox__input" type="checkbox" name="orange">
               <span class="order-checkbox__control"></span>
-              <div class="order-checkbox__text">Оранжевый</div>
+              <span class="order-checkbox__text">Оранжевый</span>
             </label>
           </div>
         </div>
-      </fieldset>
+      </section>
+      <section class="order-form__section">
+        <div class="container order-form__fields-wrapper">
+          <h3 class="order-form__heading">
+            <span class="order-form__heading-text">ФИО</span>
+          </h3>
+          <div class="order-form__controls">
+            <div class="order-form__group">
+              <label class="order-form__label" for="name-input">Имя:</label>
+              <input class="order-form__input" name="name" id="name-input" type="text" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="order-form__group">
+              <label class="order-form__label" for="surname-input">Фамилия:</label>
+              <input class="order-form__input" name="surname" id="surname-input" type="text" placeholder="Укажите фамилию*" required>
+            </div>
+            <div class="order-form__group">
+              <label class="order-form__label" for="middle-name-input">Отчество:</label>
+              <input class="order-form__input" name="middle_name" id="middle-name-input" type="text" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+          <h3 class="order-form__heading">
+            <span class="order-form__heading-text">ТЕЛ</span>
+          </h3>
+        </div>
+      </section>
     </form>
   </section>
 
