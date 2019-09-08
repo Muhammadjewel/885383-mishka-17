@@ -9,6 +9,7 @@
   display: flex;
   width: 100%;
   align-items: center;
+  margin-top: 0;
   margin-bottom: 27px;
   font-size: 17px;
   line-height: 16px;
@@ -27,6 +28,62 @@
 
 .order-form__heading-text {
   width: 64px;
+}
+
+.order-form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--textarea {
+    margin-bottom: 17px;
+  }
+}
+
+.order-form__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $black-text-color;
+
+  &--hidden {
+    @include visually-hidden();
+  }
+}
+
+.order-form__input,
+.order-form__textarea {
+  padding: 17px 0;
+  border: none;
+  border-bottom: 2px solid #000000;
+  font-size: 17px;
+  line-height: 18px;
+  color: $default-text-color;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    border-color: $seafoam-blue-3;
+  }
+
+  @include placeholder-color(rgba(68, 68, 68, 0.3));
+}
+
+.order-form__textarea {
+  min-height: 142px;
+  padding: 17px;
+  border: 2px solid #000000;
+}
+
+.order-form__info {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 @include breakpoint-up($breakpoint-tablet) {
