@@ -38,10 +38,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-
-  &--textarea {
-    margin-bottom: 17px;
-  }
 }
 
 .order-form__label {
@@ -62,6 +58,7 @@
   border-bottom: 2px solid #000000;
   font-size: 17px;
   line-height: 18px;
+  background: transparent;
   color: $default-text-color;
   outline: 0;
 
@@ -77,6 +74,7 @@
   min-height: 142px;
   padding: 17px;
   border: 2px solid #000000;
+  margin-bottom: 17px;
 }
 
 .order-form__info {
@@ -97,24 +95,73 @@
     }
   }
 
-  .order-form__heading::after {
-    display: none;
-  }
-
   .order-form__fields-wrapper {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .order-form__controls {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &--textarea {
+      width: calc(100% - 165px);
+    }
   }
 
   .order-form__heading {
     flex-shrink: 0;
     width: 165px;
     margin-top: 19px;
+
+    &::after {
+      display: none;
+    }
+
+    &--lower {
+      margin: 0;
+    }
   }
 
-  .order-form__controls {
+  .order-form__group {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .order-form__label {
+    margin-right: 25px;
+  }
+
+  .order-form__input,
+  .order-form__textarea {
+    flex-grow: 1;
+  }
+
+  .order-form__textarea {
+    margin-bottom: 53px;
+  }
+
+  .order-form__footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .order-form__info {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order-form__button {
+    width: 230px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

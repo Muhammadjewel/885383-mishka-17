@@ -148,15 +148,15 @@
         <div class="container order-form__fields-wrapper">
           <div class="order-form__controls">
             <div class="order-form__group">
-              <h3 class="order-form__heading">
-                <span class="order-form__heading-text">ТЕЛ</span>
+              <h3 class="order-form__heading order-form__heading--lower">
+                <span class="order-form__heading-text order-form__heading-text">ТЕЛ</span>
               </h3>
               <label class="order-form__label order-form__label--hidden" for="phone-input">Телефон</label>
               <input class="order-form__input" name="phone" id="phone-input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             </div>
             <div class="order-form__group">
-              <h3 class="order-form__heading">
-                <span class="order-form__heading-text">E-mail</span>
+              <h3 class="order-form__heading order-form__heading--lower">
+                <span class="order-form__heading-text order-form__heading-text">E-mail</span>
               </h3>
               <label class="order-form__label order-form__label--hidden" for="email-input">E-mail</label>
               <input class="order-form__input" name="email" id="email-input" type="email" placeholder="Ваш Email*" required>
@@ -169,17 +169,17 @@
           <h3 class="order-form__heading">
             <span class="order-form__heading-text">Доп</span>
           </h3>
-          <div class="order-form__controls">
+          <div class="order-form__controls order-form__controls--textarea">
             <div class="order-form__group order-form__group--textarea">
               <label class="order-form__label order-form__label--hidden" for="additional-input">Пожелания к заказу:</label>
               <textarea class="order-form__textarea" name="additional_info" id="additional-input"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
-            <footer class="order-form__footer">
-              <p class="order-form__info">*Поля обязательны для заполнения</p>
-              <button class="button button--block" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
-            </footer>
           </div>
+          <footer class="order-form__footer">
+            <p class="order-form__info">*Поля обязательны для заполнения</p>
+            <button class="order-form__button button button--block" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+          </footer>
         </div>
       </section>
     </form>
