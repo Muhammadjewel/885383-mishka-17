@@ -58,6 +58,11 @@
     width: 50%;
     min-height: 53px;
     margin-bottom: 24px;
+
+    &:last-child,
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
   }
 
   .order-checkbox__control {
