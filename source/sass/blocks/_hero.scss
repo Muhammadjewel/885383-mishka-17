@@ -1,15 +1,15 @@
 .hero {
-  padding-top: 75px;
-  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat center -15px;
+  padding-top: 70px;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat center -19px;
 
   @media (min-resolution: 1.5dppx) {
-    background: #f9f9f9 url("../img/hero-mobile@2x.jpg") no-repeat center -25px / 600px;
+    background: #f9f9f9 url("../img/hero-mobile@2x.jpg") no-repeat center -28px / 600px;
   }
 }
 
 .hero__text {
   margin-top: 0;
-  margin-bottom: 128px;
+  margin-bottom: 122px;
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
@@ -20,7 +20,7 @@
 .hero__link {
   position: relative;
   display: block;
-  padding: 28px 30px;
+  padding: 27px 30px;
   margin: 0 -30px;
   font-size: 19px;
   line-height: 24px;

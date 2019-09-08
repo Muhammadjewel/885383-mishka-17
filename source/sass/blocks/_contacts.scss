@@ -1,12 +1,12 @@
 .contacts {
-  padding-top: 38px;
+  padding-top: 35px;
   padding-bottom: 39px;
 }
 
 .contacts__heading {
   position: relative;
   margin-top: 0;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
   font-size: 18px;
   color: $black-text-color;
 }
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .contacts__label {
@@ -43,7 +43,8 @@
 
 .contacts__map-link {
   position: relative;
-  display: block;
+  display: flex;
+  margin-top: 4px;
   margin-bottom: 39px;
 }
 
@@ -60,6 +61,7 @@
 
 .contacts__map-picture {
   display: block;
+  margin-top: 5px;
   margin-left: -30px;
   margin-right: -30px;
 }
