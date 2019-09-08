@@ -171,4 +171,14 @@
     width: 115px;
     transform: translateX(-100%);
   }
+
+  .order-form__controls {
+    width: 100%;
+  }
+
+  .order-form__label,
+  .order-form__input {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
