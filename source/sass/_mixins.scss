@@ -37,25 +37,6 @@
   overflow: hidden;
 }
 
-@mixin placeholder-color($color) {
-  &::-webkit-input-placeholder {
-    color: $color;
-  }
-
-  &::-moz-placeholder {
-    color: $color;
-    opacity: 1;
-  }
-
-  &:-ms-input-placeholder {
-    color: $color;
-  }
-
-  &:-moz-placeholder {
-    color: $color;
-  }
-}
-
 @mixin breakpoint-up($viewport-size) {
   @media (min-width: $viewport-size) {
     @content;
