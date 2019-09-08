@@ -33,6 +33,15 @@
   display: none;
 }
 
+.sitenav--nojs .main-nav,
+.sitenav--nojs .user-actions {
+  display: block;
+}
+
+.sitenav--nojs .sitenav__toggler {
+  display: none;
+}
+
 .sitenav__delivery-text {
   display: none;
   margin: 0;
