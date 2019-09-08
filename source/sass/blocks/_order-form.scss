@@ -1,0 +1,30 @@
+.order-form__fieldset {
+  padding: 0;
+  border: none;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.order-form__legend {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 27px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $seafoam-blue;
+  text-transform: uppercase;
+
+  &::after {
+    flex-grow: 1;
+    width: 100px;
+    height: 1px;
+    background-color: $seafoam-blue;
+    content: "";
+  }
+}
+
+.order-form__legend-text {
+  width: 64px;
+}
