@@ -52,3 +52,22 @@
   line-height: 18px;
   color: $black-text-color;
 }
+
+@include breakpoint-up($breakpoint-tablet) {
+  .order-checkbox {
+    width: 50%;
+    min-height: 53px;
+    margin-bottom: 24px;
+  }
+
+  .order-checkbox__control {
+    width: 53px;
+    height: 53px;
+  }
+
+  .order-checkbox__text {
+    padding-left: 81px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+}

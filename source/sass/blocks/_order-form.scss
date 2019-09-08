@@ -28,3 +28,25 @@
 .order-form__legend-text {
   width: 64px;
 }
+
+@include breakpoint-up($breakpoint-tablet) {
+  .order-form__legend::after {
+    display: none;
+  }
+
+  .order-form__fields-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .order-form__legend {
+    flex-shrink: 0;
+    width: 165px;
+    margin-top: 19px;
+  }
+
+  .order-form__controls {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
