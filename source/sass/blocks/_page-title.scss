@@ -35,7 +35,13 @@
   }
 
   .page-title__heading {
-    font-size: 53px;
+    font-size: 43px;
     line-height: 57px;
+  }
+}
+
+@include breakpoint-up($breakpoint-tablet) {
+  .page-title__heading  {
+    font-size: 53px;
   }
 }
