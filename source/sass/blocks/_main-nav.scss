@@ -1,0 +1,50 @@
+.main-nav {
+  @include reset-list;
+}
+
+.main-nav__link {
+  @include sitenav-link;
+}
+
+@include breakpoint-only($breakpoint-tablet, $breakpoint-desktop - 1px) {
+  .main-nav {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 50px;
+    display: flex;
+  }
+
+  .main-nav__item {
+    margin-right: 37px;
+  }
+
+  .main-nav__link {
+    padding: 0;
+    border-top: 0;
+    font-size: 15px;
+  }
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .main-nav {
+    display: flex;
+    order: -1;
+    width: 410px;
+  }
+
+  .main-nav__item {
+    border-left: 1px solid #ececec;
+
+    &:first-child {
+      border-left: none;
+    }
+  }
+
+  .main-nav__link {
+    padding: 30px 35px;
+  }
+
+  .main-nav__item:first-child .main-nav__link {
+    padding-left: 0;
+  }
+}

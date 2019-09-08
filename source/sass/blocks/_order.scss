@@ -1,0 +1,42 @@
+.order {
+  padding: 25px 0 30px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.order__heading {
+  @include visually-hidden;
+}
+
+.order__text {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+@include breakpoint-up($breakpoint-tablet) {
+  .order {
+    padding-top: 62px;
+    padding-bottom: 0;
+  }
+
+  .order__text {
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .order {
+    padding-top: 106px;
+  }
+
+  .order .container {
+    width: 700px;
+    padding: 0;
+  }
+
+  .order__text {
+    margin-bottom: 5px;
+  }
+}

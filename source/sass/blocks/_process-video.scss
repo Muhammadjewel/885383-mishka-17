@@ -1,0 +1,154 @@
+.process-video {
+  padding-bottom: 58px;
+}
+
+.process-video__container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.process-video__heading {
+  position: relative;
+  padding-left: 91px;
+  margin-top: 26px;
+  margin-bottom: 23px;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black-text-color;
+}
+
+.process-video__heading-icon {
+  position: absolute;
+  top: 50%;
+  left: 34px;
+  transform: translateY(-50%);
+}
+
+.process-video__player {
+  position: relative;
+}
+
+.process-video__picture,
+.process-video__img {
+  display: block;
+  width: 100%;
+}
+
+.process-video__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  border: none;
+  background: none;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+.process-video__play-button img {
+  display: block;
+}
+
+.process-video__info {
+  padding: 29px 34px 34px;
+}
+
+.process-video__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.process-video__button {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@include breakpoint-up($breakpoint-tablet) {
+  .process-video {
+    padding-bottom: 63px;
+  }
+
+  .process-video__heading {
+    padding-left: 109px;
+    margin-top: 41px;
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+
+  .process-video__heading-icon {
+    left: 42px;
+  }
+
+  .process-video__player {
+    order: -1;
+  }
+
+  .process-video__info {
+    padding: 0 42px 46px;
+  }
+
+  .process-video__text {
+    margin-bottom: 33px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .process-video {
+    padding-bottom: 105px;
+  }
+
+  .process-video__container {
+    position: relative;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .process-video__heading {
+    position: absolute;
+    top: 98px;
+    right: 60px;
+    width: 230px;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .process-video__heading-icon {
+    top: -50px;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .process-video__player {
+    width: 680px;
+  }
+
+  .process-video__info {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    padding: 60px;
+    padding-left: 80px;
+  }
+}

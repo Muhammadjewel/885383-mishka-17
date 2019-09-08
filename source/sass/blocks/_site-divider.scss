@@ -1,0 +1,17 @@
+.site-divider {
+  max-width: 1050px;
+  height: 6px;
+  border: none;
+  margin: 0 auto;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: contain;
+  background-repeat: repeat-x;
+
+  @include breakpoint-up($breakpoint-tablet) {
+    height: 15px;
+  }
+
+  @include breakpoint-up($breakpoint-desktop) {
+    height: 23px;
+  }
+}

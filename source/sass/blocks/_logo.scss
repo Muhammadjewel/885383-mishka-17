@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 79px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.logo__link {
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo__img {
+  display: block;
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .logo {
+    flex-grow: 1;
+  }
+}

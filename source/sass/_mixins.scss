@@ -1,0 +1,69 @@
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@mixin sitenav-link {
+  position: relative;
+  display: block;
+  padding: 27px 50px 27px 77px;
+  border-top: 1px solid #ececec;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $black-text-color;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+  }
+}
+
+@mixin breakpoint-up($viewport-size) {
+  @media (min-width: $viewport-size) {
+    @content;
+  }
+}
+
+@mixin breakpoint-only($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}

@@ -1,0 +1,47 @@
+.page-title {
+  padding-top: 74px;
+  padding-bottom: 74px;
+  background-color: $very-light-pink;
+  color: $black-text-color;
+  text-align: center;
+}
+
+.page-title__heading {
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+@include breakpoint-up($breakpoint-tablet) {
+  .page-title {
+    padding-top: 103px;
+    padding-bottom: 87px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: contain;
+  }
+
+  .page-title__heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@include breakpoint-up($breakpoint-tablet) {
+  .page-title {
+    padding-bottom: 114px;
+    background-size: contain;
+  }
+
+  .page-title__heading {
+    font-size: 43px;
+    line-height: 57px;
+  }
+}
+
+@include breakpoint-up($breakpoint-desktop) {
+  .page-title__heading {
+    font-size: 53px;
+  }
+}
