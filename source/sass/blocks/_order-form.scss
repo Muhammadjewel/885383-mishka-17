@@ -60,3 +60,11 @@
     flex-wrap: wrap;
   }
 }
+
+@include breakpoint-up($breakpoint-desktop) {
+  .order-form__legend {
+    position: absolute;
+    width: 115px;
+    transform: translateX(-100%);
+  }
+}

@@ -76,3 +76,9 @@
     line-height: 18px;
   }
 }
+
+@include breakpoint-up($breakpoint-desktop) {
+  .order-checkbox {
+    width: 33.3333%;
+  }
+}

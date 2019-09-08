@@ -25,3 +25,18 @@
     line-height: 30px;
   }
 }
+
+@include breakpoint-up($breakpoint-desktop) {
+  .order {
+    padding-top: 106px;
+  }
+
+  .order .container {
+    width: 700px;
+    padding: 0;
+  }
+
+  .order__text {
+    margin-bottom: 5px;
+  }
+}
