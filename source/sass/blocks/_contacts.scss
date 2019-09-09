@@ -78,12 +78,12 @@
 
 @include breakpoint-up($breakpoint-tablet) {
   .contacts {
-    padding-top: 69px;
+    padding-top: 61px;
     padding-bottom: 57px;
   }
 
   .contacts__heading {
-    margin-bottom: 56px;
+    margin-bottom: 48px;
     font-size: 43px;
     line-height: 50px;
 
@@ -102,7 +102,7 @@
   .contacts__info-group {
     justify-content: flex-start;
     width: 50%;
-    margin-bottom: 55px;
+    margin-bottom: 48px;
   }
 
   .contacts__info {
@@ -153,6 +153,8 @@
 
   .contacts__heading {
     width: 350px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .contacts__info {
@@ -162,7 +164,7 @@
 
   .contacts__info-group {
     width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 28px;
   }
 
   .contacts__heading::after {
@@ -178,11 +180,13 @@
   }
 
   .contacts__map-picture {
+    margin-top: 3px;
     margin-left: 0;
     margin-right: 0;
   }
 
   .contacts__cta-button {
+    margin-top: 49px;
     margin-left: 0;
   }
 }

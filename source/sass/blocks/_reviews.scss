@@ -50,12 +50,12 @@
   .reviews__container {
     position: relative;
     padding-top: 80px;
-    padding-bottom: 70px;
+    padding-bottom: 86px;
     background: url("../img/review@1x.jpg") no-repeat left top / 350px;
   }
 
   .reviews__heading {
-    margin-bottom: 54px;
+    margin-bottom: 48px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -63,7 +63,7 @@
   .reviews-controls {
     position: absolute;
     right: 50px;
-    bottom: 42px;
+    bottom: 83px;
   }
 
   .reviews-controls__item {
@@ -81,12 +81,22 @@
 
 @include breakpoint-up($breakpoint-desktop) {
   .reviews__container {
+    padding-top: 71px;
     padding-left: 225px;
     padding-bottom: 163px;
     background-position: 50px top;
   }
 
+  .reviews__heading {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__add-button {
+    top: 79px;
+  }
+
   .reviews-controls {
-    bottom: 120px;
+    bottom: 130px;
   }
 }
