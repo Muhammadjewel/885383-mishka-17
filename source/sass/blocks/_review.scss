@@ -17,11 +17,12 @@
 
 @include breakpoint-up($breakpoint-tablet) {
   .review__text {
-    margin-bottom: 54px;
+    margin-bottom: 57px;
     font-size: 17px;
   }
 
   .review__author {
+    margin-bottom: 4px;
     font-size: 18px;
   }
 }

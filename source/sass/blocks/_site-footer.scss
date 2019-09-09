@@ -15,7 +15,7 @@
   height: 1px;
   border: none;
   margin-top: 27px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   background-color: #e8e8e8;
 }
 
@@ -39,7 +39,7 @@
 
 @include breakpoint-up($breakpoint-tablet) {
   .site-footer {
-    padding-top: 58px;
+    padding-top: 55px;
     padding-bottom: 50px;
   }
 
@@ -59,6 +59,11 @@
   }
 
   .site-footer__copyright {
+    justify-content: flex-end;
     width: 200px;
+  }
+
+  .site-footer__copy-text {
+    margin-right: 30px;
   }
 }

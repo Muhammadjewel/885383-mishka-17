@@ -77,14 +77,14 @@
 
 @include breakpoint-up($breakpoint-tablet) {
   .featured-product {
-    padding-top: 40px;
+    padding-top: 35px;
     padding-bottom: 53px;
   }
 
   .featured-product__heading {
     position: absolute;
     top: 10px;
-    right: 50px;
+    right: 76px;
     width: 75px;
     margin-bottom: 0;
     text-align: center;
@@ -104,7 +104,7 @@
   }
 
   .featured-product__text {
-    margin-bottom: 30px;
+    margin-bottom: 36px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -115,7 +115,7 @@
 
   .featured-product__picture {
     position: absolute;
-    top: 100px;
+    top: 106px;
     right: 50px;
   }
 
@@ -140,19 +140,19 @@
   }
 
   .featured-product__heading {
-    top: 75px;
-    left: 100px;
+    top: 87px;
+    left: 95px;
   }
 
   .featured-product__name {
-    margin-top: 60px;
-    margin-bottom: 44px;
+    margin-top: 74px;
+    margin-bottom: 48px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .featured-product__text {
-    margin-bottom: 40px;
+    margin-bottom: 46px;
   }
 
   .featured-product__details {
@@ -161,7 +161,7 @@
 
   .featured-product__picture {
     z-index: -1;
-    top: 0;
+    top: 21px;
     right: 50px;
   }
 
