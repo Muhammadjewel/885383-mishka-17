@@ -1,4 +1,20 @@
+.reviews {
+  position: relative;
+  margin-bottom: 6px;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 6px;
+    background: url("../img/bg-zigzag-line.svg") repeat-x top left / contain;
+    content: "";
+  }
+}
+
 .reviews__container {
+  position: relative;
   padding-top: 30px;
   padding-bottom: 45px;
 }
@@ -47,6 +63,15 @@
 }
 
 @include breakpoint-up($breakpoint-tablet) {
+  .reviews {
+    margin-bottom: 15px;
+
+    &::after {
+      height: 15px;
+      bottom: -15px;
+    }
+  }
+
   .reviews__container {
     position: relative;
     padding-top: 80px;
@@ -80,11 +105,30 @@
 }
 
 @include breakpoint-up($breakpoint-desktop) {
+  .reviews {
+    margin-bottom: 23px;
+
+    &::after {
+      display: none;
+    }
+  }
+
   .reviews__container {
     padding-top: 71px;
     padding-left: 225px;
     padding-bottom: 163px;
     background-position: 50px top;
+
+    &::after {
+      position: absolute;
+      left: 50px;
+      right: 50px;
+      bottom: -20px;
+      transform: rotate(180deg);
+      height: 23px;
+      background: url("../img/bg-zigzag-line.svg") repeat-x top left / contain;
+      content: "";
+    }
   }
 
   .reviews__heading {
