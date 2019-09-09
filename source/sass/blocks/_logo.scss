@@ -23,6 +23,17 @@
   display: block;
 }
 
+@include breakpoint-up($breakpoint-tablet) {
+  .logo__link {
+    margin-top: 5px;
+  }
+
+  .logo__img {
+    width: 112px;
+    height: 46px;
+  }
+}
+
 @include breakpoint-up($breakpoint-desktop) {
   .logo {
     flex-grow: 1;
