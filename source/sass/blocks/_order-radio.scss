@@ -46,6 +46,10 @@
   background-color: $seafoam-blue-3;
 }
 
+.order-radio__input:focus ~ .order-radio__control {
+  border-color: $seafoam-blue-3;
+}
+
 .order-radio__text {
   padding-left: 62px;
   font-weight: bold;

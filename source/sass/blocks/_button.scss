@@ -17,7 +17,8 @@
     width: 100%;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $default-text-color;
     color: #ffffff;
   }
