@@ -29,11 +29,6 @@
   color: #ffffff;
   transition: padding 0.2s ease;
 
-  &:hover {
-    padding-top: 23px;
-    padding-bottom: 38px;
-  }
-
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
@@ -87,7 +82,7 @@
     background: #f9f9f9 url("../img/hero-tablet@1x.jpg") no-repeat center top;
 
     @media (min-resolution: 1.5dppx) {
-      background: #f9f9f9 url("../img/hero-tablet@2x.jpg") no-repeat center bottom / 1200px;
+      background: #f9f9f9 url("../img/hero-tablet@2x.jpg") no-repeat center bottom 10px / 1150px;
     }
   }
 
@@ -120,6 +115,11 @@
     margin: 0;
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      margin-bottom: -5px;
+      transform: translateY(-5px);
+    }
   }
 }
 
