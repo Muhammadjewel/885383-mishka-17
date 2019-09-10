@@ -44,6 +44,7 @@
 .contacts__map {
   display: block;
   width: 100vw;
+  max-width: calc(100% + 60px);
   height: 457px;
   overflow: hidden;
   border: none;
@@ -114,6 +115,7 @@
 
 @include breakpoint-only($breakpoint-tablet, $breakpoint-desktop - 1) {
   .contacts__map {
+  max-width: calc(100% + 100px);
     margin-left: -50px;
     margin-right: -50px;
   }
