@@ -118,7 +118,7 @@
                 alt="Product">
           </picture>
           <div class="featured-product__price">Цена: 990 руб.</div>
-          <a class="button button--block" href="#">ЗАКАЗАТЬ</a>
+          <a class="featured-product__order button button--block" href="order.html">ЗАКАЗАТЬ</a>
         </div>
       </div>
     </section>
@@ -235,7 +235,7 @@
     <section class="modal">
       <div class="modal__content">
         <h2 class="modal__heading">Добавить в корзину</h2>
-        <form class="modal__form">
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
           <p class="modal__text">Выберите размер:</p>
           <div class="modal__options">
             <label class="modal-radio modal__radio">
@@ -256,5 +256,8 @@
       </div>
     </section>
 
+
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
