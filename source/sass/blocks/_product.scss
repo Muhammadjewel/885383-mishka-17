@@ -79,10 +79,22 @@
   padding: 0;
   border: none;
   background: none;
+  cursor: pointer;
 }
 
-.product__add-to-cart img {
+.product__add-to-cart svg {
   display: block;
+  fill: #000000;
+  opacity: 0.2;
+}
+
+.product__add-to-cart:hover svg {
+  fill: $seafoam-blue;
+  opacity: 1;
+}
+
+.product__add-to-cart:active svg {
+  opacity: 0.3;
 }
 
 @include breakpoint-up($breakpoint-tablet) {
