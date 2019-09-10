@@ -45,6 +45,7 @@
   display: block;
   width: 100vw;
   height: 457px;
+  overflow: hidden;
   border: none;
   margin: 4px -30px 39px;
 }
@@ -155,6 +156,7 @@
     right: 50px;
     width: 525px;
     height: 457px;
+    margin: 0;
   }
 
   .contacts__cta-button {
