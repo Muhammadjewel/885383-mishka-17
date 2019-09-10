@@ -10,4 +10,12 @@
 
 .socials__icon {
   display: block;
+
+  &:hover {
+    fill: $aqua-marine-2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
