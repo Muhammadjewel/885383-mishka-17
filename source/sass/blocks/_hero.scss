@@ -55,15 +55,14 @@
   top: 50%;
   transform: translateY(-50%);
   opacity: 0.5;
+  fill: $blue-green;
 
   &--interior {
     right: 37px;
-    fill: $blue-green;
   }
 
   &--toys {
     right: 27px;
-    fill: $blue-green;
   }
 }
 
