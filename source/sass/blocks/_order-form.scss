@@ -35,6 +35,7 @@
 }
 
 .order-form__group {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 13px;
@@ -46,6 +47,13 @@
   &--lower {
     margin-bottom: 33px;
   }
+}
+
+.order-form__icon {
+  position: absolute;
+  bottom: 17px;
+  right: 8px;
+  opacity: 0.2;
 }
 
 .order-form__label {
@@ -99,6 +107,12 @@
   padding: 17px;
   border: 2px solid #000000;
   margin-bottom: 17px;
+}
+
+.order-form__input:hover ~ .order-form__icon,
+.order-form__input:focus ~ .order-form__icon {
+  fill: $seafoam-blue-3;
+  opacity: 1;
 }
 
 .order-form__info {
