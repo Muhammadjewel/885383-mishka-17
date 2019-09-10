@@ -35,6 +35,15 @@
 
 .site-footer__academy-logo {
   display: block;
+  fill: $seafoam-blue;
+}
+
+.site-footer__copy-link:hover .site-footer__academy-logo {
+  fill: $aqua-marine-2;
+}
+
+.site-footer__copy-link:active .site-footer__academy-logo {
+  opacity: 0.3;
 }
 
 @include breakpoint-up($breakpoint-tablet) {
@@ -52,6 +61,16 @@
   .site-footer__logo-wrapper {
     display: flex;
     width: 200px;
+  }
+
+  .site-footer__logo {
+    &:hover {
+      fill: $aqua-marine-2;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .site-footer__divider {
